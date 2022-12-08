@@ -1,0 +1,10 @@
+Bundle-Name: hisc-taglib
+Bundle-SymbolicName: com.hiop.hisc.taglib
+Bundle-Version: 1.0.0
+Export-Package: com.hiop.hisc.taglib.*
+Provide-Capability:\
+	osgi.extender;\
+		osgi.extender="jsp.taglib";\
+		uri="http://hitachivanrata.com/tld/hisc-ui";\
+		version:Version="${Bundle-Version}"
+Web-ContextPath: /hisc-taglib

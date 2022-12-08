@@ -1,0 +1,9 @@
+Bundle-Name: reports-web
+Bundle-SymbolicName: com.hiop.hisc.reports.web
+Bundle-Version: 1.0.0
+Export-Package: com.hiop.hisc.reports.web.constants
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  \
+  *

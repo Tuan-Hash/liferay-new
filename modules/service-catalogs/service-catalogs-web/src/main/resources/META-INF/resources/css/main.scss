@@ -1,0 +1,105 @@
+.hisc-service-catalog-categories {
+  .list-categories {
+    .card-title {
+      font-size: 1.3rem;
+    }
+
+    .category-img {
+      width: 70px;
+      height: 70px;
+      vertical-align: middle;
+      align-items: center;
+      padding: 5px;
+
+      .lexicon-icon {
+        height: 3em;
+        width: 3em;
+      }
+    }
+
+    .panel {
+      margin: 0;
+
+      .btn {
+        background: #e6e8ea;
+        padding: 10px;
+        border-radius: 0;
+
+        .panel-title {
+          text-transform: none;
+        }
+      }
+
+      .panel-body {
+        background: #f7f7f7;
+        padding: 0;
+
+        ul {
+          margin: 0;
+
+          li {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hisc-service-catalog-catalogs {
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .panel {
+    margin: 0;
+
+    .btn {
+      background: #e6e8ea;
+      padding: 10px;
+      border-radius: 0;
+
+      .panel-title {
+        text-transform: none;
+      }
+    }
+
+    .panel-body {
+      background: #f7f7f7;
+      padding: 0;
+
+      ul {
+        margin: 0;
+
+        li {
+          border-radius: 0;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+#hisc-sc-request-form {
+  @import "reactapp";
+
+  .catalog-title {
+    margin: 20px 0px;
+  }
+
+  .request-form {
+    padding: 0 20px;
+  }
+}
+
+#hisc-sc-request-form {
+  @import "reactapp";
+
+  .catalog-title {
+    margin: 20px 0px;
+  }
+
+  .request-form {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,6 @@
+Bundle-Name: service-catalogs-service
+Bundle-SymbolicName: com.hiop.hisc.servicecatalogs.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

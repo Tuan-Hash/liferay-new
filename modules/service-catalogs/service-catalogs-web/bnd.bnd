@@ -1,0 +1,12 @@
+Bundle-Name: service-catalog
+Bundle-SymbolicName: com.hiop.hisc.servicecatalogs.web
+Bundle-Version: 1.0.0
+Export-Package: com.hiop.hisc.servicecatalogs.web.constants
+Export-Package:\
+  com.hiop.hisc.servicecatalogs.web.dto,\
+  com.hiop.hisc.servicecatalogs.web.services
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  \
+  *

@@ -1,0 +1,58 @@
+.App .Action-Buttons {
+  margin-top: 15px;
+}
+
+.Footer .Action-Buttons button {
+  text-transform: none;
+}
+
+.reference-hide {
+  display: none !important;
+}
+
+.request-list {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.request-list .request-execution-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-list .request-hide {
+  visibility: hidden !important;
+}
+
+.request-list .request-disable {
+  cursor: default;
+}
+
+.request-list .request-display-none {
+  display: none;
+}
+
+.request-list .request-list-item {
+  border: 1px solid;
+  border-bottom: none;
+  font-size: 0.875rem;
+  color: #6b6c7e;
+  border: 0.0625rem solid #e7e7ed;
+}
+
+.request-list .request-list-item:last-of-type {
+  border-bottom: 1px solid e7e7ed;
+}
+
+.request-list .request-list-item .request-list-item-icon {
+  font-size: 1rem;
+}
+
+.request-list .request-list-item li {
+  border: none !important;
+}
+
+.request-list .request-list-item-text span {
+  font-size: 0.875rem;
+}
+  

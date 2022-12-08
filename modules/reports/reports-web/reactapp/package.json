@@ -1,0 +1,59 @@
+{
+  "name": "reactapp_reports",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@clayui/alert": "^3.70.1",
+    "@clayui/button": "^3.73.0",
+    "@clayui/css": "^3.76.0",
+    "@clayui/form": "^3.77.0",
+    "@clayui/icon": "^3.56.0",
+    "@clayui/layout": "^3.65.1",
+    "@clayui/modal": "^3.78.3",
+    "@clayui/tooltip": "^3.78.3",
+    "@clayui/drop-down": "^3.78.3",
+    "@clayui/date-picker": "^3.78.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/lab": "^5.0.0-alpha.106",
+    "@mui/material": "^5.10.12",
+    "lodash": "4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-grid-layout": "^1.3.4",
+    "react-scripts": "5.0.1",
+    "react-sizeme": "^3.0.2",
+    "sass": "^1.55.0",
+    "powerbi-client": "^2.21.1",
+    "powerbi-client-react": "^1.3.5",
+    "react-app-polyfill": "^1.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "node ./scripts/build.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "rewire": "^6.0.0"
+  }
+}

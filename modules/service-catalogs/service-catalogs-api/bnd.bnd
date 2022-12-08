@@ -1,0 +1,11 @@
+Bundle-Name: service-catalogs-api
+Bundle-SymbolicName: com.hiop.hisc.servicecatalogs.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.hiop.hisc.servicecatalogs.exception,\
+	com.hiop.hisc.servicecatalogs.model,\
+	com.hiop.hisc.servicecatalogs.service,\
+	com.hiop.hisc.servicecatalogs.service.permission,\
+	com.hiop.hisc.servicecatalogs.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../service-catalogs-service/service.xml

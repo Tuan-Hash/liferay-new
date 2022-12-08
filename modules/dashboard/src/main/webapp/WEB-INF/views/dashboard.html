@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:th="http://www.thymeleaf.org">
+  <div id="hisc-dashboard">
+    <div class="px-3 py-3">
+      <div class="row">
+        <div class="col-lg-12 p-0">
+          <h2>
+            <span id="welcomeSection"></span>
+            <span th:text="${firstName}"></span>
+          </h2>
+          <p th:text="#{dashboard.welcome}"></p>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-3">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-3 card card-type-asset section-col">
+          <div class="d-flex w-100 company-bg">
+            <img th:src="${companyLogo}" class="company-logo" />
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex company-info">
+                <div>
+                  <span
+                    th:text="#{dashboard.company}"
+                    class="section-total"
+                  ></span>
+                  <img
+                    class="cursor-pointer"
+                    src="https://img.icons8.com/ios/12/000000/info--v1.png"
+                  />
+                </div>
+                <div class="company-name" th:text="${siteGroupName}"></div>
+              </div>
+              <div class="company-btn cursor-pointer">
+                <img
+                  src="https://img.icons8.com/ios/12/000000/bulleted-list.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 card card-type-asset section-col">
+          <div class="section-bg">
+            <div class="mb-20">
+              <span th:text="#{dashboard.sites}" class="section-text"></span>
+              <img
+                class="cursor-pointer"
+                src="https://img.icons8.com/ios/12/000000/info--v1.png"
+              />
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="section-number">303</div>
+                <div>
+                  <div class="card px-1 m-0 section-percent">
+                    <span class="section-text">+5%</span>
+                    <img
+                      src="https://img.icons8.com/ios/12/000000/long-arrow-up.png"
+                    />
+                  </div>
+                  <span
+                    th:text="#{dashboard.total-with-last-month}"
+                    class="section-total"
+                  >
+                  </span>
+                </div>
+              </div>
+              <div>
+                <img src="https://img.icons8.com/ios/20/000000/globe--v1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 card card-type-asset section-col">
+          <div class="section-bg">
+            <div class="mb-20">
+              <span th:text="#{dashboard.assets}" class="section-text"></span>
+              <img
+                class="cursor-pointer"
+                src="https://img.icons8.com/ios/12/000000/info--v1.png"
+              />
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="section-number">38</div>
+                <div>
+                  <div class="card px-1 m-0 section-percent">
+                    <span class="section-text">+5%</span>
+                    <img
+                      src="https://img.icons8.com/ios/12/000000/long-arrow-up.png"
+                    />
+                  </div>
+                  <span
+                    th:text="#{dashboard.total-with-last-month}"
+                    class="section-total"
+                  >
+                  </span>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://img.icons8.com/ios/20/000000/orthogonal-view--v1.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row iframe">
+        <div class="col-lg-12 p-0">
+          <iframe
+            th:if="${iframeSrc != null}"
+            title="HIOP-32"
+            width="1280"
+            height="720"
+            th:src="${iframeSrc}"
+            frameborder="0"
+            allowfullscreen="true"
+            class="w-100"
+          ></iframe>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <script type="text/javascript" th:inline="javascript">
+    var morningTxt = /*[[#{dashboard.morning}]]*/ "";
+    var afternoonTxt = /*[[#{dashboard.afternoon}]]*/ "";
+    var eveningTxt = /*[[#{dashboard.evening}]]*/ "";
+
+    var time = new Date().getHours();
+    var timeRange =
+      time < 12 ? morningTxt : time < 16 ? afternoonTxt : eveningTxt;
+
+    var welcomeSection = document.getElementById("welcomeSection");
+    welcomeSection.innerHTML = timeRange + ", ";
+  </script>
+</div>

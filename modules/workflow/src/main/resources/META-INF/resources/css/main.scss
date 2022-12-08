@@ -1,0 +1,93 @@
+.hisc-workflow {
+    .workflow-list {
+        td {
+            font-weight: 600;
+        }
+        ul {
+            margin: 0;
+    
+            li {
+              border-radius: 0;
+              padding: 10px;
+            }
+        }
+    }
+}
+
+.hisc-workflow-detail {
+    @import "reactapp";
+    
+    .catalog-workflow {
+        display: flex;
+        position: relative;
+
+        .workflow-canvas {
+            width: 100%;
+        }
+        .workflow-canvas-related-open {
+            margin-right: 17%;
+        }
+
+        .workflow-related-open {
+            width: 17%;
+            display: block;
+        }
+     
+        .related-button {
+            display: block;
+            height: 50px;
+            position: absolute;
+            right: 1px;
+            z-index: 99;
+            padding: 5px;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &.closed {
+                .closed {
+                    display: inline;
+                }
+
+                .open {
+                    display: none;
+                }
+            }
+
+            &.open {
+                right: 301px;
+                .closed {
+                    display: none;
+                }
+
+                .open {
+                    display: inline;
+                }
+            }
+        }
+
+        .workflow-related-list {
+
+            &.open {
+                display: block;
+            }
+
+            &.closed {
+                display: none;
+            }
+
+            .related-title{
+                padding-left: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .related-list-item {
+                width: 300px;
+            }
+        }
+    }
+    
+}

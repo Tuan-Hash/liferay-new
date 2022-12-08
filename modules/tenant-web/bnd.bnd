@@ -1,0 +1,4 @@
+Bundle-Name: tenant-web
+Bundle-SymbolicName: com.hiop.hisc.ternant.web
+Bundle-Version: 1.0.0
+Export-Package: com.hiop.hisc.ternant.web.constants

@@ -1,0 +1,8 @@
+Bundle-Name: hook
+Bundle-SymbolicName: com.hiop.hisc.hook
+Bundle-Version: 1.0.0
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  \
+  *

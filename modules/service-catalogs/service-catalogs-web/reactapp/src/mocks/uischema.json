@@ -1,0 +1,119 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "label": "Completed",
+      "scope": "#/properties/done"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/due_date"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/server_name",
+      "label": "Server Name",
+      "options":{
+        "url": "http://172.37.7.31:8000/hitachi/api/v1/vcenter/datacenters",
+        "key": "name",
+        "label": "name"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/multiple",
+      "label": "Multiple Selected",
+      "options":{
+        "isMutipleSelect": true,
+        "url": "http://172.37.7.31:8000/hitachi/api/v1/vcenter/datacenters",
+        "key": "name",
+        "label": "name"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/recurrence"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/recurrence_interval",
+      "rule": {
+        "effect": "HIDE",
+        "condition": {
+          "type": "LEAF",
+          "scope": "#/properties/recurrence",
+          "expectedValue": "Never"
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/description",
+      "options": {
+        "multi": true
+      }
+    },
+    {
+      "type": "Control",
+      "label": "Datacenters",
+      "scope": "#/properties/datacenters",
+      "options": {
+        "url": "http://172.37.7.31:8000/hitachi/api/v1/vcenter/datacenters",
+        "key": "datacenter",
+        "label": "name"
+      }
+    },
+    {
+      "type": "Control",
+      "label": "Cluster",
+      "scope": "#/properties/cluster",
+      "options": {
+        "url": "http://172.37.7.31:8000/hitachi/api/v1/vcenter/clusters",
+        "key": "cluster",
+        "label": "name",
+        "filter": {
+          "key": "datacenter",
+          "scope": "datacenters"
+        }
+      },
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/datacenters",
+          "schema": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "type": "Control",
+      "label": "Host",
+      "scope": "#/properties/host",
+      "options": {
+        "isMutipleSelect": true,
+        "url": "http://172.37.7.31:8000/hitachi/api/v1/vcenter/hosts",
+        "key": "host",
+        "label": "name",
+        "filter": {
+          "scope": "cluster",
+          "key": "cluster"
+        }
+      },
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/cluster",
+          "schema": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.App {
+  padding: 8px 16px;
+}
+
+.App .Action-Buttons {
+  margin-top: 16px;
+  bottom: 8px;
+  position: sticky;
+}
+
+.App .Action-Buttons button {
+  text-transform: none;
+}
+
+.App .reference-search-icon {
+  padding: 0;
+}
+
+.App .Action-Buttons button:not(:last-child) {
+  margin-right: 8px;
+}

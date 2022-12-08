@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<taglib
+	version="2.1"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+>
+	<description>Provides the HISC UI component tags, prefixed with <![CDATA[<code>hisc-ui:</code>]]>. These tags are used for displaying and configuring Maps (e.g., Google Maps, OpenStreetMap, etc.).</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>hisc-ui</short-name>
+	<uri>http://hitachivanrata.com/tld/hisc-ui</uri>
+	<tag>
+		<name>input-permissions</name>
+		<tag-class>com.hiop.hisc.taglib.ui.InputPermissionsTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>formName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>modelName</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>entryId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>modelLabel</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>boolean</type>
+		</attribute>
+	</tag>
+</taglib>

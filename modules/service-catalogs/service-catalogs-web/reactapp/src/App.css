@@ -1,0 +1,15 @@
+.App .Action-Buttons {
+  margin-top: 15px;
+}
+
+.App .Action-Buttons button {
+  text-transform: none;
+}
+
+.App .reference-search-icon {
+  padding: 0;
+}
+
+.App .reference-hide {
+  display: none;
+}

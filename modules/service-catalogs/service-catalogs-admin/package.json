@@ -1,0 +1,14 @@
+{
+	"dependencies": {
+	},
+  "devDependencies": {
+    "@liferay/npm-scripts": "47.6.1"
+  },
+	"name": "service-catalogs-admin",
+	"scripts": {
+		"build": "liferay-npm-scripts build",
+		"checkFormat": "liferay-npm-scripts check",
+		"format": "liferay-npm-scripts fix"
+	},
+	"version": "1.0.0"
+}

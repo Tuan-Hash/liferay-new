@@ -1,0 +1,10 @@
+Bundle-Name: service-catalogs-admin
+Bundle-SymbolicName: com.hiop.hisc.servicecatalogs.admin
+Bundle-Version: 1.0.0
+Web-ContextPath: /service-catalogs-admin
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  \
+  *
+-dsannotations-options: inherit

@@ -1,0 +1,11 @@
+Bundle-Name: workflow
+Bundle-SymbolicName: com.hiop.hisc.workflow
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.hiop.hisc.workflow.constants,\
+	com.hiop.hisc.workflow.dto
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  \
+  *

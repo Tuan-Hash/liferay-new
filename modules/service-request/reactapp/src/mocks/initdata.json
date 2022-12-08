@@ -1,0 +1,5 @@
+{
+  "datacenters": "datacenter-640",
+  "cluster": "domain-c498",
+  "host": ["host-1116", "host-1124"]
+}

@@ -1,0 +1,22 @@
+Bundle-Name: common
+Bundle-SymbolicName: com.hiop.hisc.common
+Bundle-Version: 1.0.0
+Export-Package:\
+  com.hiop.hisc.common.internal.*,\
+  com.hiop.hisc.common.constants,\
+  com.hiop.hisc.common.utils,\
+  com.hiop.hisc.common.services,\
+  com.hiop.hisc.common.dto,\
+  com.hiop.hisc.common.dto.azure
+Import-Package: \
+  !org.conscrypt.*,\
+  !org.slf4j.impl.*,\
+  !com.google.crypto.tink.subtle.*,\
+  !com.sun.net.httpserver.*,\
+  !net.shibboleth.utilities.java.support.xml.*,\
+  !org.bouncycastle.*,\
+  !org.cryptomator.siv.*,\
+  !org.joda.time.*,\
+  !org.opensaml.*,\
+  \
+  *

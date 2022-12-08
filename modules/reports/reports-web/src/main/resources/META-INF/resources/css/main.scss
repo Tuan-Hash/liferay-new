@@ -1,0 +1,66 @@
+@import "reactapp";
+
+.reports-edit-report {
+  .sources-layout {
+    min-height: 300px;
+  }
+}
+
+#hisc-report {
+	a {
+		color: black;
+	}
+
+	a:hover {
+		color: black;
+		text-decoration: none;
+	}
+
+	.nav-item {
+		padding: 0 0 1rem 0;
+	}
+
+	.nav-link {
+		padding: 0 1rem 0 1rem;
+	}
+
+	.report-sidebar {
+		border-right: solid 2px black;
+
+		.collapse-icon {
+			position: absolute;
+			top: -5px;
+			right: 0;
+		}
+	}
+
+	.report-list-category {
+		display: flex;
+		justify-content: space-between
+	}
+
+	.category-link {
+		width: 90%;
+		display: inline-block;
+		padding: 5px;
+	}
+
+	.report-link {
+		padding: 5px 0 5px 1rem;
+	}
+
+	.report-header {
+		margin-top: 15px;
+	}
+
+	.sidebar-link-active {
+		background-color: #e4e4ec;
+	}
+}
+
+#hisc-report-management {
+	.edit-icon {
+		align-self: center;
+	}
+}
+

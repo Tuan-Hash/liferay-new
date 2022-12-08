@@ -1,0 +1,37 @@
+.app {
+  .app__transfer-list-middle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .app__transfer-list-title {
+    margin-bottom: 8px;
+  }
+
+  .app__transfer-list-wrapper {
+    height: calc(100vh - 104px) !important; 
+    overflow: auto;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(3 0 0) 0px 1px 3px 0px;
+  }
+
+  .app__progress-bar {
+    position: absolute;
+  }
+}
+
+.app--loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.app__no-data {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}

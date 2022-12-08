@@ -1,0 +1,13 @@
+node_modules
+node_modules_cache
+dist
+bundles
+build
+yarn-error.log
+yarn.lock
+/.gradle/
+.project
+.settings
+.gradle
+.classpath
+.vscode

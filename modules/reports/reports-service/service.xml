@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.hiop.hisc.reports">
+	<namespace>hisc_report</namespace>
+	<entity local-service="true" name="Category" remote-service="true" uuid="true">
+		<!-- PK fields -->
+        <column name="categoryId" type="long" primary="true"></column>
+        
+        <!-- Group instance -->
+		<column name="groupId" type="long"/>
+
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="name" type="String" />
+		<column name="description" type="String" />
+		<column name="icon" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+
+		<!-- References -->
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+    <entity local-service="true" name="Report" remote-service="true" uuid="true">
+		<!-- PK fields -->
+        <column name="reportId" type="long" primary="true"></column>
+        <column name="categoryId" type="long" primary="true"></column>
+        
+        <!-- Group instance -->
+		<column name="groupId" type="long"/>
+
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="name" type="String" />
+		<column name="description" type="String" />
+		<column name="icon" type="String" />
+		<column name="sources" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+
+		<!-- References -->
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>

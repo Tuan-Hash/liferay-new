@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<hint-collection name="TEXTAREA">
+		<hint name="max-length">500</hint>
+	</hint-collection>
+	<model name="com.hiop.hisc.reports.model.Category">
+		<field name="uuid" type="String" />
+		<field name="categoryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="name" type="String" />
+		<field name="description" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="icon" type="String" />
+	</model>
+	<model name="com.hiop.hisc.reports.model.Report">
+		<field name="uuid" type="String" />
+		<field name="reportId" type="long" />
+		<field name="categoryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="name" type="String" />
+		<field name="description" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="icon" type="String" />
+		<field name="sources" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+	</model>
+</model-hints>

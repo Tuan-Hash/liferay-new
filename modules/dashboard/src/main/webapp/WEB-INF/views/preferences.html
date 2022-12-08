@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:th="http://www.thymeleaf.org">
+  <form
+    th:id="|${namespace}mainForm|"
+    method="post"
+    th:action="${mainFormActionURL}"
+    th:object="${preferences}"
+  >
+    <fieldset>
+      <div class="form-group">
+        <label
+          th:for="|${namespace}iframeSrc|"
+          path="iframeSrc"
+          th:text="#{dashboard.iframe-src}"
+        />
+        <input
+          th:id="|${namespace}iframeSrc|"
+          class="form-control"
+          th:field="*{iframeSrc}"
+        />
+        <span
+          class="portlet-msg-error"
+          th:if="${#fields.hasErrors('iframeSrc')}"
+          th:errors="*{ifrmeSrc}"
+        />
+      </div>
+    </fieldset>
+    <hr />
+    <!--/* The CSRF hidden field is automatically added by Thymeleaf because the th:action attribute is present for the form. */-->
+    <button
+      class="btn btn-primary"
+      name="action"
+      th:text="#{dashboard.submit}"
+      type="submit"
+      value="submit"
+    />
+    <button
+      class="btn"
+      name="action"
+      th:text="#{dashboard.reset}"
+      type="submit"
+      value="reset"
+    />
+  </form>
+</div>

@@ -1,0 +1,11 @@
+Bundle-Name: reports-api
+Bundle-SymbolicName: com.hiop.hisc.reports.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.hiop.hisc.reports.exception,\
+	com.hiop.hisc.reports.model,\
+	com.hiop.hisc.reports.service,\
+	com.hiop.hisc.reports.service.persistence,\
+	com.hiop.hisc.reports.service.permission
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../reports-service/service.xml

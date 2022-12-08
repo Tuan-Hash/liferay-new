@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.hiop.hisc.servicecatalogs.model.Catalog">
+		<field name="uuid" type="String" />
+		<field name="catalogId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="categoryId" type="String" />
+		<field name="name" type="String" />
+	</model>
+</model-hints>
